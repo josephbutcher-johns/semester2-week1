@@ -2,4 +2,4 @@
 -- Expected Columns:
 -- StudentId, FirstName, LastName, EnrolmentYear
 
-SELECT StudentId, FirstName, LastName, EnrolmentYear FROM students WHERE EnrolmentYear == 2022
+SELECT StudentId, FirstName, LastName, EnrolmentYear FROM Student WHERE EnrolmentYear == 2022
