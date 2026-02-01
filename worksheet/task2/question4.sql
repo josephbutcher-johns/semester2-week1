@@ -5,4 +5,4 @@
 SELECT StudentId, FirstName, LastName, CourseName 
 FROM 
 Student INNER JOIN Enrolment On Student.StudentId = Enrolment.StudentId
-Course INNER JOIN Enrolment On Course.CourseId = Enrolment.StudentId
+Course INNER JOIN Enrolment On Course.CourseId = Enrolment.CourseId
