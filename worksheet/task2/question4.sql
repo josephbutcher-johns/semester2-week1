@@ -2,7 +2,7 @@
 -- Expected Columns:
 -- StudentId, FirstName, LastName, CourseName
 
-SELECT StudentId, FirstName, LastName, CourseName 
+SELECT Student.StudentId, Student.FirstName, Student.LastName, Course.CourseName 
 FROM 
-Student INNER JOIN Enrolment On Student.StudentId = Enrolment.StudentId
+(Student INNER JOIN Enrolment On Student.StudentId = Enrolment.StudentId)
 Course INNER JOIN Enrolment On Course.CourseId = Enrolment.CourseId
