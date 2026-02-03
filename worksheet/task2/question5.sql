@@ -8,4 +8,3 @@ FROM Student
 INNER JOIN Enrolment ON Student.StudentId = Enrolment.StudentId
 INNER JOIN Course ON Enrolment.CourseId = Course.CourseId
 WHERE Course.Credits >= 40
-GROUP BY Student.StudentId, Student.FirstName, Student.LastName;
