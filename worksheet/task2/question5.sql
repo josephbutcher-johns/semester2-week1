@@ -7,3 +7,4 @@ FROM Student
 INNER JOIN Enrolment ON Student.StudentId = Enrolment.StudentId
 INNER JOIN Course ON Enrolment.CourseId = Course.CourseId
 WHERE Enrolment.Grade >= 40
+GROUP BY Student.StudentId, Student.FirstName, Student.LastName;
