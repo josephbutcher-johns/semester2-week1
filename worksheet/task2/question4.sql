@@ -3,6 +3,6 @@
 -- StudentId, FirstName, LastName, CourseName
 
 SELECT Student.StudentId, Student.FirstName, Student.LastName, Course.CourseName 
-FROM 
-(Student INNER JOIN Enrolment On Student.StudentId = Enrolment.StudentId)
-Course INNER JOIN Enrolment On Course.CourseId = Enrolment.CourseId
+FROM Student 
+INNER JOIN Enrolment ON Student.StudentId = Enrolment.StudentId
+INNER JOIN Course ON Enrolment.CourseId = Course.CourseId; 
